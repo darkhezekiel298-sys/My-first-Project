@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080810">
+    <meta name="description" content="Welcome to MAUTON.EXE — exploring technology, web development, and cybersecurity.">
+    <title>MAUTON.EXE | Official Website</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        background: #080810;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    header {
+        padding: 22px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #292039;
+        background: rgba(8, 8, 16, 0.95);
+    }
+    .logo {
+        color: #bd70ff;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    .logo span {
+        color: #ffffff;
+    }
+    .header-label {
+        color: #aaa;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    .hero {
+        position: relative;
+        min-height: 78vh;
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: #8d32ff;
+        opacity: 0.12;
+        filter: blur(100px);
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .tag {
+        color: #d9aaff;
+        border: 1px solid #7137a1;
+        border-radius: 30px;
+        padding: 10px 17px;
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        background: #140d20;
+    }
+    h1 {
+        font-size: clamp(48px, 12vw, 100px);
+        letter-spacing: 8px;
+        font-weight: 900;
+        text-shadow: 0 0 35px #923cff55;
+    }
+    h1 span {
+        color: #bd70ff;
+    }
+    .hero-description {
+        color: #aaa6b8;
+        max-width: 500px;
+        line-height: 1.9;
+        font-size: 15px;
+        margin: 25px 0 32px;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        justify-content: center;
+    }
+    .btn {
+        display: inline-block;
+        padding: 14px 23px;
+        border-radius: 7px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .primary {
+        background: #bd70ff;
+        color: #100817;
+    }
+    .primary:hover {
+        background: #d6a3ff;
+        transform: translateY(-3px);
+    }
+    .secondary {
+        border: 1px solid #7542a0;
+        color: #e5caff;
+    }
+    .secondary:hover {
+        background: #1d1229;
+        transform: translateY(-3px);
+    }
+    section {
+        padding: 75px 20px;
+        text-align: center;
+    }
+    .section-label {
+        color: #bd70ff;
+        font-size: 11px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-size: clamp(26px, 5vw, 38px);
+        margin-bottom: 20px;
+    }
+    .section-description {
+        color: #aaa6b8;
+        max-width: 600px;
+        line-height: 1.9;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        margin: 30px auto 0;
+        max-width: 700px;
+    }
+    .skill {
+        padding: 15px 20px;
+        background: #151120;
+        border: 1px solid #30213f;
+        border-radius: 9px;
+        color: #d9c4ed;
+        font-size: 13px;
+        transition: 0.3s;
+    }
+    .skill:hover {
+        border-color: #bd70ff;
+        transform: translateY(-4px);
+    }
+    .contact-box {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 35px 20px;
+        background: #100d19;
+        border: 1px solid #30213f;
+        border-radius: 15px;
+    }
+    .contact-box p {
+        color: #aaa6b8;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    footer {
+        padding: 28px 20px;
+        text-align: center;
+        border-top: 1px solid #292039;
+        color: #777;
+        font-size: 12px;
+        line-height: 2;
+    }
+    footer span {
+        color: #bd70ff;
+    }
+    @media (max-width: 480px) {
+        header {
+            padding: 20px;
+        }
+        .logo {
+            font-size: 19px;
+            letter-spacing: 2px;
+        }
+        .header-label {
+            font-size: 9px;
+            letter-spacing: 1px;
+        }
+        h1 {
+            letter-spacing: 4px;
+        }
+        .hero {
+            min-height: 75vh;
+        }
+        section {
+            padding: 60px 20px;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="logo">MAUTON<span>.EXE</span></div>
+    <div class="header-label">OFFICIAL WEBSITE</div>
+</header>
+<main>
+    <section class="hero" id="home">
+        <div class="tag">⚡ FUTURE CYBERSECURITY ANALYST</div>
+        <h1>MAU<span>TON</span></h1>
+        <p class="hero-description">
+            Exploring technology, building digital experiences,
+            and learning the skills to secure the digital world.
+            Welcome to my universe.
+        </p>
+        <div class="buttons">
+            <a class="btn primary" href="#about">EXPLORE MY WORLD</a>
+            <a class="btn secondary" href="#skills">MY TECH JOURNEY</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="section-label">01 / ABOUT ME</div>
+        <h2>Beyond The Ordinary.</h2>
+        <p class="section-description">
+            One mind. Endless possibilities. A journey into
+            technology, innovation, and cybersecurity.
+            I'm building my skills one project at a time
+            and turning ideas into reality.
+        </p>
+    </section>
+    <section id="skills">
+        <div class="section-label">02 / WHAT I'M LEARNING</div>
+        <h2>My Tech Journey</h2>
+        <p class="section-description">
+            Every expert starts somewhere. These are the
+            technologies I'm exploring as I grow in tech.
+        </p>
+        <div class="skills">
+            <div class="skill">🔐 Cybersecurity</div>
+            <div class="skill">🌐 Web Development</div>
+            <div class="skill">🐍 Python</div>
+            <div class="skill">💻 Git & GitHub</div>
+            <div class="skill">🛡️ Ethical Hacking</div>
+            <div class="skill">⚙️ Problem Solving</div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-label">03 / CONNECT</div>
+        <div class="contact-box">
+            <h2>Let's Build Something.</h2>
+            <p>
+                Interested in technology, cybersecurity,
+                or creative digital projects?
+                Let's connect and grow together.
+            </p>
+            <a class="btn primary"
+               href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                FIND ME ON GITHUB ↗
+            </a>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2026 <span>MAUTON.EXE</span>. All rights reserved.</p>
+    <p>Built with ambition. Driven by curiosity. ⚡</p>
+</footer>
+</body>
+</html>
